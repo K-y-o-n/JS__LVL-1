@@ -53,12 +53,8 @@ function setCellLetter() {
 
 
 
-
-//---------------------------------------------------------------------------
-
 function init() {
-  createCell(),
-    shop()
+  createCell()
 }
 
 window.onload = init;
