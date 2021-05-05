@@ -1,0 +1,143 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.shopDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.shopItem {
+  text-align: center;
+}
+
+.shopItem>*:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.shopItemImg {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+.basketDiv {
+  width: 1200px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.basketDiv.hidden {
+  display: none;
+}
+
+.basketTitle {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.basketTotal {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid green;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.basketNextBtn {
+  visibility: hidden;
+}
+
+.basketNextBtn.visible {
+  visibility: visible;
+}
+
+.basketItem {
+  display: flex;
+  align-items: center;
+}
+
+.basketItem>*{
+  margin-right: 10px;
+}
+
+.basketItemImg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.adressDiv {
+  border: 1px solid black;
+  padding: 10px 5px;
+  opacity: 0;
+}
+
+.adressDiv.visible {
+  opacity: 1;
+}
+
+.adressWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adressTitle {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.adressInput {
+  width: 400px;
+}
+
+.adressPrevBtn {
+  margin-right: 10px;
+}
+
+.commentDiv {
+  border: 1px solid black;
+  padding: 10px 5px;
+  opacity: 0;
+}
+
+.commentDiv.visible {
+  opacity: 1;
+}
+
+.commentTitle {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.commentWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commentTextArea {
+  resize: none;
+}
+
+.commentPrevBtn {
+  margin-right: 10px;
+}
