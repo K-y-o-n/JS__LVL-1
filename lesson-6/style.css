@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.shopDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.shopItem {
+  text-align: center;
+}
+
+.shopItem>*:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.shopItemImg {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+.basketDiv {
+  width: 510px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+}

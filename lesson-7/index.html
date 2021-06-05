@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Lesson 7</title>
+</head>
+
+<body>
+  <!-- 1. Реализовать страницу корзины:
+    Добавить возможность не только смотреть состав корзины, но и редактировать его, обновляя
+    общую стоимость или выводя сообщение «Корзина пуста». -->
+
+  <!-- 2. На странице корзины:
+  Сделать отдельные блоки «Состав корзины», «Адрес доставки», «Комментарий»;
+  Сделать эти поля сворачиваемыми;
+  Заполнять поля по очереди, то есть давать посмотреть состав корзины, внизу которого есть кнопка «Далее». Если нажать ее, сворачивается «Состав корзины» и открывается «Адрес доставки» и так далее. -->
+
+  <div class="container">
+    <div class="shopDiv"></div>
+    <div class="basketDiv">
+      <h2 class="basketTitle">Корзина</h2>
+      <div class="basketTotal">
+        <div class="basketItems">Корзина пуста</div>
+        <button class="basketNextBtn">Далее</button>
+      </div>
+    </div>
+    <div class="adressDiv">
+      <h2 class="adressTitle">Адресс доставки</h2>
+      <div class="adressWrapper">
+        <input type="text" name="" class="adressInput" placeholder="Введите адрес доставки">
+        <nav>
+          <button class="adressPrevBtn">Назад</button>
+          <button class="adressNextBtn">Далее</button>
+        </nav>
+      </div>
+    </div>
+    <div class="commentDiv">
+      <h2 class="commentTitle">Комментарий</h2>
+      <div class="commentWrapper">
+        <textarea class="commentTextArea" name="" cols="40" rows="6" placeholder="Ваш комментарий"></textarea>
+        <nav>
+          <button class="commentPrevBtn">Назад</button>
+          <button class="commentBuyBtn">Оформить заказ</button>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

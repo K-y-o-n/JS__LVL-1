@@ -1,0 +1,21 @@
+/* Задание 2 и 3  */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.basket {
+  width: 500px;
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+.price {
+  margin-bottom: 10px;
+}
