@@ -28,7 +28,8 @@ function showBasketNextBtn() {
   let btn = document.querySelector(".basketNextBtn");
   if (shopBasket.every(elem => elem !== undefined) && shopBasket.length != 0) {
     btn.classList.add("visible");
-  } else if (shopBasket.every(elem => elem === undefined)) {
+  }
+  if (shopBasket.every(elem => elem === undefined)) {
     btn.classList.remove("visible");
   }
 }
@@ -134,6 +135,7 @@ function addPrevNextBtnListener() {
   adressPrev.addEventListener("click", e => {
     basketDiv.classList.remove("hidden");
     adressDiv.classList.remove("visible");
+    commentDiv.classList.remove("visible");
   })
 
   adressNext.addEventListener("click", e => {

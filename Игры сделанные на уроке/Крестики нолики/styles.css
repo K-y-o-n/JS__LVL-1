@@ -1,0 +1,25 @@
+.gameWrapper {
+    border: 3px solid black;
+
+    width: 600px;
+    height: 600px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tile {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.tileImage {
+    width: 100%;
+    height: auto;
+}
+
+
